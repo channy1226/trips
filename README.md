@@ -1,4 +1,4 @@
-# trips
+# Comma.ai Trips Visualizer
 
 <img src="https://i.imgur.com/MItDZcR.png" />
 
@@ -11,5 +11,3 @@
 
 <h4> Because there were over 200 Mb of data, it was impossible to render them dynamically using GeoJSON.
 Hence, the GeoJSON file is compiled into VectorTiles to have design flexibility </h2>
-
-<h4> npm install --save  </h4>

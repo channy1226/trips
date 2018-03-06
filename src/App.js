@@ -51,17 +51,22 @@ class App extends Component {
           zoom={[10]}
         />
         <div className="Legend">
-          <h4> Mph </h4>
-          <svg>
+          <p className="Legend-title">Car Speed</p>
+          <svg className="Legend-gradient">
               <defs>
-                  <linearGradient id="Gradient-1"
+                  <linearGradient id="Gradient"
                        x1="0" y1="0" x2="100%" y2="0">
-                      <stop offset="0%" stopColor="lightblue" />
-                      <stop offset="100%" stopColor="#ef5b2b" />
+                      <stop offset="0%" stopColor="red" />
+                      <stop offset="100%" stopColor="green" />
                   </linearGradient>
               </defs>
-              <rect x="450" y="10" width="200" height="100" fill= "url(#Gradient-1)" stroke="#333333" strokeWidth="4px" />
+              <rect x="0" y="0" width="150" height="50" fill= "url(#Gradient)" />
           </svg>
+          <div className="Legend-container">
+            <span className="Legend-container-item">0mph</span>
+            <span className="Legend-container-item">30mph</span>
+            <span className="Legend-container-item">60mph</span>
+          </div>
         </div>
       </div>
     );
